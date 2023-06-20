@@ -1,0 +1,207 @@
+* { box-sizing: border-box;}
+
+body { width: 1400px;}
+
+/* Parent*/
+
+.parent_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+[class*="works"] {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+
+.main_title {
+  line-height: 45px;
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 60px;
+
+  font-family: "Delius Unicase", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+/* First section Cities_works */
+
+.first_grid_container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 370px;
+  grid-gap: 30px;
+}
+
+.first_grid-item,
+.second_grid-item,
+[class*="q"] {
+  position: relative;
+}
+
+.first_grid-item_img, 
+.second_grid-item_img {
+  position: absolute;
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.first_grid-item:nth-child(4n+2) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.first_grid-item:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.subtitle {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  padding: 5px;
+  gap: 10px;
+  left: 15px;
+  bottom: 15px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+span:last-child {
+  font-weight: 200;
+  color: #f3eded;
+}
+
+.first_grid-item:nth-child(4n+2) .subtitle,
+.first_grid-item:nth-child(3) .subtitle,
+.second_grid-item:nth-child(2) .subtitle,
+.second_grid-item:nth-child(3) .subtitle,
+.second_grid-item:nth-child(5) .subtitle,
+.q8 .subtitle,
+.q9 .subtitle {width: 720px;}
+
+/* Second section Nature_works */
+
+.second_grid_container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 370px;
+  grid-gap: 30px;
+}
+
+.second_grid-item:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.second_grid-item:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.second_grid-item:nth-child(4) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.second_grid-item:nth-child(5) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* Third section People_works */
+
+.third_grid_container {  
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(5,1fr);
+  grid-auto-rows: 370px;
+  grid-gap: 30px;
+  grid-template-areas:
+    "q1 q2 q3"
+    "q4 q2 q5"
+    "q6 q7 q5"
+    "q6 q8 q8"
+    "q9 q9 q10";
+}
+
+.q1 { grid-area: q1; }
+.q2 { grid-area: q2; }
+.q3 { grid-area: q3; }
+.q4 { grid-area: q4; }
+.q5 { grid-area: q5; }
+.q6 { grid-area: q6; }
+.q7 { grid-area: q7; }
+.q8 { grid-area: q8; }
+.q9 { grid-area: q9; }
+.q10 { grid-area: q10; }
+
+.third_grid-item_img {
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+/* Change */
+.first_grid-item_img,
+.second_grid-item_img,
+.third_grid-item_img { filter:contrast(75%);}
+
+.first_grid-item_img:hover,
+.second_grid-item_img:hover,
+.third_grid-item_img:hover { filter:contrast(100%);}
+
+/* Items */
+
+.item_hover {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  padding: 5px;
+  top: 15px;
+  left: 20px;
+  width: 340px;
+  cursor: pointer;
+}
+
+.first_grid-item:nth-child(4n+2) .item_hover,
+.first_grid-item:nth-child(3) .item_hover,
+.second_grid-item:nth-child(2) .item_hover,
+.second_grid-item:nth-child(3) .item_hover,
+.second_grid-item:nth-child(5) .item_hover,
+.q8 .item_hover,
+.q9 .item_hover {width: 720px;}
+
+.item_hover .hover {
+  opacity: 0;
+}
+.first_grid-item:hover .hover,
+.second_grid-item:hover .hover,
+.third_grid-item:hover .hover {
+  opacity: 0.5;
+}
+.first_grid-item:hover .hover:hover,
+.second_grid-item:hover .hover:hover,
+.third_grid-item:hover .hover:hover {
+  opacity: 1;
+}

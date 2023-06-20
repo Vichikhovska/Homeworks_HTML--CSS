@@ -1,0 +1,91 @@
+.logo {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5em;
+  color: var(--base-color-900);
+}
+
+h1 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: var(--base-color-900);
+
+  @media screen and (max-width: 320px) {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+h2 {
+  font-family: 'Red Hat Display',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: var(--base-color-900);
+
+  @media screen and (max-width: 768px) { text-align: center;}
+  @media screen and (max-width: 320px) { font-size: 32px; line-height: 42px;}
+}
+
+h3 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 46px;
+  letter-spacing: 0.1em;
+  color: var(--base-color-900);
+
+  @media screen and (max-width:320px) { font-size: 26px; line-height: 43px;}
+}
+
+.text {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: var(--grey-color-700);
+
+  @media screen and (max-width:320px) { font-size: 16px;}
+}
+
+.foot-text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  color: var(--grey-color-700);
+
+  @media screen and (max-width:320px) { font-size: 18px; line-height: 30px;}
+}
+
+.foot-text:hover{color: var(--grey-color-900);}
+.foot-text:active {text-decoration: underline;}
+
+.basement-text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: var(--base-color-900);
+  
+  text-align: center;
+
+  @media screen and (max-width:320px) { font-size: 16px; line-height: 27px;}
+}
+

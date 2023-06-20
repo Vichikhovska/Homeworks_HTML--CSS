@@ -1,0 +1,58 @@
+@media screen and (max-width: 768px) {
+
+  .parent {
+    .parent_BG_header, .navigation {max-width: 768px; position: sticky;}
+
+    .parent_BG_screen {margin: 200px 0 144px 50px;}
+
+    .parent_BG_info_img,
+    .parent_main_promises_static {opacity:0;}
+
+    .parent_BG_info_list,
+    .quote_text_svg {left: 0;}
+
+    .list_right, .list_right_1 {padding: 10px; justify-content: center;}
+
+    .parent_main {gap: 30px;}
+
+    .parent_main_benefits { row-gap: 0; grid-template-columns: repeat(2, 360px);}
+
+    .benefits_item {justify-content: space-between;}
+
+    .quote_text {padding: 10px;}
+
+    .video_box_screen_poster img {width: 600px;}
+
+    .video_box_screen_iframe {width: 600px; height: 371px;}
+
+    .video_box_screen_poster_svg {top: 120px; left: 250px;}
+
+    .parent_main_promises_text {left: 0; padding: 75px 35px 75px 35px;}
+
+    .parent_main_reviews {max-width: 768px; width: 100%;}
+    
+    .reviews_content {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &_item {
+        padding: 20px 30px;
+        max-width: 450px;
+
+        .lato-400-16 {font-size: 20px;}
+      }
+
+      &_item:nth-child(2) {margin-left: 270px;}
+    }
+
+    .parent_main_contacts {gap: 50px;}
+
+    .parent_main_contacts form .registration input {max-width: 320px;}
+
+    .parent_footer {
+      max-width: 768px;
+      height: 120px;
+      gap: 100px;
+    }
+  }
+}

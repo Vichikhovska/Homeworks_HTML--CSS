@@ -1,0 +1,104 @@
+* {box-sizing: border-box;}
+
+body {max-width: 1400px;}
+
+.parent_container {min-height: 100hv;}
+
+.all_cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+  width: 800px;
+  padding: 20px;
+}
+
+.organizer{position: relative;}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  height: 200px;
+  width: 150px;
+
+  border: solid 2px rgb(190, 187, 187);
+  border-radius: 10px;
+  background-color: #e4e3f5;
+
+  animation-name: change_card;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-iteration-count:infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes change_card {
+  0%{ opacity: 1;transform: rotateY(180deg);}
+  50% {opacity: 1;}
+  100%{opacity: 0;}
+}
+
+.cards_header {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  flex-direction: column;
+}
+
+.cards_main {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.cards_footer {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  flex-direction: column-reverse;
+}
+
+.cards_header,
+.cards_main,
+.cards_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_name {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #16133D;
+}
+
+.shirt {position: absolute; top: 0;}
+
+.shirt img { 
+  height: 200px;
+  width: 150px; 
+
+  animation-name: shirt_of_card;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-iteration-count:infinite;
+  animation-direction: normal;
+  animation-fill-mode:forwards;
+} 
+
+@keyframes shirt_of_card {
+  0%{opacity: 0; transform: rotateY(180deg);}
+  50%{opacity: 0.4;}
+  100%{opacity: 1;}
+}

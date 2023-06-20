@@ -1,0 +1,116 @@
+@media screen and (max-width: 320px) {
+  .parent_container {
+    padding: 0 10px 0 10px;
+  }
+  .header_container {
+    position: fixed;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 60px;
+  }
+  .header_container_navigation {
+    padding: 0;
+    gap: 20px;
+  }
+  .header_container_navigation_menu {
+    gap: 20px;
+  }
+  .burger {
+    width: 50px;
+  }
+  .side_menu_list {
+    width: 100px;
+  }
+  .screen {
+    background-size: 200% 500px;
+  }
+  .screen_block {
+    padding: 70px 10px 230px 10px;
+  }
+  .align {
+    gap: 50px;
+  }
+  .blog_box {
+    gap: 20px;
+  }
+  .blog_box_first {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .blog_box_first_left img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 250px;
+  }
+  .blog_box_second {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blog_box_second_left img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 250px;
+  }
+  .main_container_content_posts {
+    gap: 30px;
+  }
+  .main_container_content_posts_heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main_container_content_posts_main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .main_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    gap: 15px;
+  }
+  .main_box img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 210px;
+  }
+  .main_box:nth-child(2) {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main_container_content_popular {
+    gap: 50px;
+  }
+  .main_container_content_popular_heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main_container_content_popular_article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+  .main_container_content_popular_article img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 150px;
+  }
+}

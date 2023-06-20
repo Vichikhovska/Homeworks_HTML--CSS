@@ -1,0 +1,25 @@
+@media screen and (max-width: 320px) {
+  .parent {
+    max-width: 320px;
+  }
+  .parent_header {
+    max-width: 320px;
+  }
+  .parent_main {
+    max-width: 320px;
+    gap: 70px;
+  }
+  .parent_footer {
+    max-width: 320px;
+    height: 420px;
+  }
+  .main_second_box {
+    max-width: 700px;
+  }
+  .main_first_box,
+.main_third_box,
+.main_fourth_box,
+.main_fifth_box {
+    gap: 40px;
+  }
+}

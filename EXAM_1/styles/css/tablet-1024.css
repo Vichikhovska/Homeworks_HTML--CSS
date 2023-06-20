@@ -1,0 +1,18 @@
+@media screen and (max-width: 1024px) {
+  .parent .parent_BG_info_list,
+  .parent .parent_main_promises_text {
+    left: 211px;
+  }
+  .parent .quote_text_svg {
+    left: 45px;
+  }
+  .parent .reviews_content_item {
+    gap: 0;
+  }
+  .parent .lato-400-16 {
+    font-size: 14px;
+  }
+  .parent .parent_main_contacts form .registration input {
+    max-width: 350px;
+  }
+}

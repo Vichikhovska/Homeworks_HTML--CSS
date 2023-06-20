@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 800px;
+    min-height: 100vh;
+    padding: 20px auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Header */
+
+header .title {
+    margin: 0 auto;
+    background-color: #4A4F56;
+}
+
+.list_title {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #FF8984;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.name_list_title{
+    font-weight: 700;
+    font-size: 24px;    
+    line-height: 30px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+.first_name_list_title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+/* Main */
+
+main + footer {
+    position: relative;
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    background-color: #3B3F45;
+    background-size: 100%;
+}
+
+.points {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: #3B3F45;
+    background-size: 100%;
+}
+
+* .point {
+    height: 45px;
+    width: 550px;
+    margin-left: 125px;
+}
+
+.point:nth-child(1n+1){
+    border: none;
+    background-color:#88839E;
+}
+
+.point:nth-child(2n+2){
+    border:none;
+    background-color: #7A7593;
+}
+
+/* Change points*/
+
+*{transition: all .1s ease-in;}
+
+.point:hover {
+    background-color: #625E77;
+    border-top: solid #ffffff 2px;
+    border-bottom: solid #ffffff 2px;
+    box-shadow: #FFFFFF 2px;
+    transform: scale(1.03)
+}
+
+.point:active {
+    background-color:#e76f6b;
+}
+
+.main_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-left: 40px;
+}
+
+:checked ~ label .main_text {
+    text-decoration:line-through solid #ffffff 2px;
+    opacity: 30%;
+}
+
+.text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+:checked ~ label .text {
+    text-decoration:line-through solid #ffffff 2px;
+    opacity: 30%;
+}
+
+* label {
+    position:absolute;
+    padding-top: 10px;
+}
+
+/* Checkbox*/
+
+.real-checkbox { 
+    width: 20px;
+    height: 20px;
+    margin: 12px 0 12px 20px;
+}
+
+.real-checkbox:checked{
+    opacity: 30%;
+}
+
+/* Button */
+
+footer {
+    height: 100px;
+}
+
+button {
+    border-radius: 0;
+    margin: 0 auto;
+    width: 550px;
+    height: 60px;
+    display: block;
+    background: #4A4F56;
+    cursor: pointer;
+    border-style: none;
+    box-shadow: 0px 0px 2px 2px rgb(109, 105, 105);
+    margin-bottom: 50px;
+}
+
+button:hover {
+    background-color:#707680;
+}
+
+button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 1px #252427;
+}
+
+button:active {
+    background-color:#e76f6b;
+}
+
+.list_button p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FF8984;
+    margin: 0 auto;
+    padding: 15px;
+}

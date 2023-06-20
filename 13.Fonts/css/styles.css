@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 5px;
+  width: 1200px;
+  min-height: 100hv;
+  background-color: #ffffff;
+  border: black 1px solid;
+}
+
+/* Header */
+
+.parent_container, nav {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+  height: 80px;
+}
+
+.lang span {
+  padding: 10px; 
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: #929090;
+}
+
+.menu {
+  margin-left: 30px;
+}
+
+.menu span {
+  word-spacing: 10px;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 8px;
+  color: #000000;
+}
+
+.name_company img {
+  margin-left: 550px;
+}
+
+/* Main */
+.chapters {
+  margin-bottom: 50px;
+}
+
+.chapters h2 {
+  font-family: "Francois One", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.chapter_title {
+  font-family: "Farro", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  vertical-align:super;
+  text-transform: none;
+  color: #000000;
+}
+
+.chapters p {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.chapter_3_list {
+  padding-inline-start: 0;
+}
+
+.chapter_3_list li {
+  list-style: none;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.list {
+  font-weight: 700;
+}
+
+.list_bg {
+  background-color: #bdb6b6;
+}

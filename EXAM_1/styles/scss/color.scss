@@ -1,0 +1,60 @@
+:root {
+  /* base colors */
+  --base-color-900:#000000;
+  --base-color-900-90: rgba(22, 25, 38, 0.9);
+  --base-color-100:#ffffff;
+  --base-color-90: rgba(255, 255, 255, 0.9); 
+  --base-color-80: rgba(255, 255, 255, 0.8); 
+  --base-color-60: rgba(255, 255, 255, 0.6); 
+  --base-color-50: rgba(255, 255, 255, 0.5); 
+
+  /* Grey */
+  --grey-color-400: #515773;
+  --grey-color-200: #E4E4E4;
+
+ // Blue 
+  --blue-color-1000:#161926;
+  --blue-color-900: #262a3f;
+  --blue-color-900-08: rgba (38, 42, 63, 0.8);
+  --blue-color-900-06: rgba (38, 42, 63, 0.6);
+  --blue-color-900-05: rgba (38, 42, 63, 0.5);
+  --blue-color-200:#689FF2; 
+  --blue-color-200-50:rgba(104, 159, 242, 0.5); 
+  --blue-color-100: #85BBB1;
+
+
+  // Red 
+  --red-color-900: #ff0000;
+  --red-color-500: #E54F3A;  //for button hover
+  --red-color-500-03: rgba(229, 79, 58, 0.3);  // for button  shadow hover
+  --red-color-300: #F1897B;  //for button
+  --red-color-200:rgba(241, 137, 123, 0.3); //for button shadow
+
+  // Green 
+  --green-color-900: #008000;
+  --green-color-700: rgba(83, 243, 205, 0.6);
+  --green-color-600:#02E0AB;  //for button hover dark
+  --green-color-500: rgba(2, 224, 171, 0.3); // for button  shadow hover dark
+  --green-color-400:#53F3CD; //for button dark
+  --green-color-300: rgba(83, 243, 205, 0.3);  //for button shadow dark
+  --green-color-200: #85BBB1; //for text
+
+  //Gradients
+  --gradient-header: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+  --gradient-main:linear-gradient(183.11deg, rgba(255, 255, 255, 0) 46.73%, #FFFFFF 63.21%);
+  --gradient-qoute-promises: linear-gradient(0deg, rgba(25, 28, 41, 0.84), rgba(25, 28, 41, 0.84));
+  --gradient-qoute-reviews: linear-gradient(0deg, rgba(25, 28, 41, 0.6), rgba(31, 35, 51, 0.6));
+  --gradient-info: linear-gradient(359.55deg, rgba(33, 36, 54, 0.5) 0.64%, rgba(33, 36, 54, 0) 94.04%);
+
+  --gradient-main-dark: linear-gradient(183.11deg, rgba(22, 25, 38, 0) 46.73%, #161926 63.21%);
+  --gradient-header-dark: linear-gradient(270deg, rgba(22, 25, 38, 0.5) 0%, rgba(22, 25, 38, 0) 24.1%, rgba(22, 25, 38, 0) 47.19%), rgba(22, 25, 38, 0.02);
+  --gradient-nav-dark: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0) 116.9%);
+  --gradient-a-hover: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0.3) 116.9%);
+  
+  // breakpoints width
+
+  --tablet: "1024px";
+  --tablet-768:"768px";
+  --mobile-520:"520px";
+  --mobile-450:"450px";
+}

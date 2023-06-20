@@ -1,0 +1,345 @@
+.parent_container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  min-height: 100hv;
+}
+
+// Header container
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  height: 100px;
+  background-color: var(--base_color-10);
+
+    &_navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      max-width: 1170px;
+      width: 100%;
+      padding: 10px;
+
+      &_menu {
+        display: flex;
+        gap: 84px;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+}
+
+.menu {
+  &_list {
+    display: flex;
+    gap: 42px;
+  }
+}
+
+.burger {display: none;}
+
+// Section screen
+
+.screen {
+  display: flex;
+  background-image: url(/assets/img/bg-image.png);
+  background-size: 100%; 
+  background-repeat: no-repeat;
+
+    &_block {
+      display: flex;
+      padding: 100px 135px 370px 135px;
+    }
+}
+
+// Main container
+
+.align {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.main_container{
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+.main_container_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+  max-width: 1170px;
+
+    &_blog {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    &_posts {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    &_popular {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    &_info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 260px;
+
+        &_content {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          text-align: start;
+        }
+    }
+}
+
+.blog_box {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+    &_first {
+      display: flex;
+      gap: 30px;
+
+      &_right {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+      }
+
+      &_left {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+          img { 
+            display: flex;
+            max-width: 570px;
+            max-height: 470px;
+          }
+      }
+    }
+
+    &_second {
+      display: flex;
+      gap: 30px;
+
+        &_right {
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+        }
+
+        &_left {
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+
+            img { 
+              display: flex;
+              max-width: 570px;
+              max-height: 470px;
+            }
+          }
+        }
+}
+
+.right_side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  // h6:first-child {padding-bottom: 30px;}
+  // h5 {padding-bottom: 15px;}
+  // h6 {padding-bottom: 50px;}
+}
+
+.main_container_content_posts {
+
+    &_heading {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &_main {
+      display: flex;
+      gap: 30px;
+    }
+}
+
+.main_box {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  img {
+    display: flex;
+    max-width: 370px;
+    max-height: 260px;
+  }
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+        &_heading {
+          display: flex;
+          justify-content: space-between;
+          gap: 5px;
+        }
+
+        &_main {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+    }
+}
+
+.main_container_content_popular {
+
+    &_heading {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &_article {
+      display: flex;
+      gap: 30px;
+    }
+
+    &_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+        button {
+          width: 180px;
+          height: 46px;
+          background: var(--grey-color-700);
+          font-family: 'Lato', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 27px;
+          letter-spacing: 0.1em;
+          color: var(--base_color-10);
+        }
+
+        button:hover {background-color: var(--grey-color-900);}
+    }
+}
+
+.article-post_1,
+.article-post_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+    img {
+      display: flex;
+      max-width: 570px;
+      max-height: 260px;
+    }
+
+    &_box, &_box { @extend.article-post_1;
+
+        &_date, &_date {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &_history, &_history { @extend.article-post_1;}
+      }
+}
+
+// Footer container
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  width: 100%;  
+  max-width: 1440px;
+  height: 300px;
+  
+  background: var(--grey-color-100);
+  
+    &_company {
+      max-width: 1190px;
+      display: flex;
+      justify-content: space-between;
+      gap: 535px;
+      padding: 10px;
+
+        &_logo {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+
+            &_contacts {
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+            }
+        }
+
+        &_social {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+
+            svg {
+              border-radius: 2px;
+              cursor: pointer;
+            }
+            svg:hover {stroke: var(--base_color-1);}
+        }
+    }
+
+    &_item {
+      display: flex;
+      justify-content: center;
+    }
+}

@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px) {
+
+  // Parent container and header
+
+  .parent {
+    max-width: 768px;
+  
+    &_header {
+      max-width: 720px;
+      height: 60px;
+    }
+  
+    &_main { max-width: 720px;}
+  
+    &_footer {
+      max-width: 720px;
+      height: 410px;
+    }
+  }
+
+    // Main container
+
+    .main_second {
+      &_box { max-width: 700px;}
+    }
+
+    // Footer container
+
+    .parent_footer_container { gap: 50px;}
+
+    .footer_box {
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+
+      &_logo {
+        align-items: center;
+
+        &_contacts { align-items: center;}
+      }
+    }
+}

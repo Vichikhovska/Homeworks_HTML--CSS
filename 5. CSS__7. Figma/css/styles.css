@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+ header {
+  width: 0 auto;
+  height: 0 auto;
+  display: flex;
+  justify-content: center; 
+  border-bottom: #828282 solid 1px ;
+ }
+.menu li {
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  margin-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #070707;
+  }
+.menu li:hover {
+  color: rgb(70, 104, 92);
+  }
+  main {
+  width: 0 auto;
+  height: 0 auto;
+  display: flex;
+  justify-content: center; 
+  }
+.first_screen {
+  display: flex;
+  flex-direction: column;
+  position: absolute; 
+  }
+h1 {
+  position: absolute;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #070707;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  }
+  .man {
+  display: block;
+  margin-top: 120px;
+  width: 1000px;
+  }
+.about_me {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #F6F6F6;
+  background-size: 100%;
+  margin-top: 520px;
+  width: 100%;
+  }
+h2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+  color: #070707;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  }
+  .text_about_me {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #070707;
+  margin-bottom: 100px;
+}
+.info {
+  margin-bottom: 30px;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #FFFFFF;
+  background-size: 100%;
+  margin-top: 1055px;
+  width: 1000px;
+  margin-bottom: 100px;
+}
+.heading_1 p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #070707;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.product {
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+.product li {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px;
+}
+.product p {
+  text-align: center;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #828282;
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+.stars  *img {
+  position: absolute;
+  margin-right: 15px;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  top: 1810px;
+  background-color: #F6F6F6;
+  background-size: 100%;
+  margin-bottom: 30px;
+}
+.pages {
+  margin: 0 auto;
+}
+.list {
+  text-align: center;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration-line: underline;
+  color: #070707;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+footer {
+  background: #FFFFFF;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 1000px;
+  height: 750px;
+  top: 3970px;
+  margin: 0 auto;
+}
+.contacts {
+  margin-top: 0px;
+}
+.contacts p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #070707;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+button {
+  width: 200px;
+  height: 50px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 25px;
+  border-color: #070707;
+  background-color: #070707;
+  cursor: pointer;
+  margin-bottom: 30px;
+  display: block;
+  margin: 0 auto;
+}
+.links {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px;
+}
+.like_me p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #828282;
+  margin-bottom: 0;
+  }
+  .links img:hover {
+    opacity: 0.25;
+  }

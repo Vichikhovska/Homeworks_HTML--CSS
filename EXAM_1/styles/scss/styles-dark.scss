@@ -1,0 +1,66 @@
+@media(prefers-color-scheme: dark) {
+
+  .parent {
+    background-color: var(--blue-color-1000);
+
+    &_BG { 
+      background-image: var(--gradient-main-dark), url(/assets/img/main-bg-dark.png);
+      background-blend-mode: lighten;
+
+      &_header {
+        background: var(--gradient-header-dark);
+      }
+    }
+
+    .navigation_burger .side_menu_list {background-color: var(--base-color-900-90);}
+
+    .parent_BG_info_list,
+    .parent_main_promises_text {background-color: var(--base-color-900-90);}
+
+    .devider_info {border: solid 1px var(--blue-color-100);}
+
+    .parent_main_contacts, 
+    .benefits_item, 
+    .parent_main_contacts,
+    .parent_footer {border-top: solid 1px var(--grey-color-400);}
+
+    .parent_main_contacts form .registration {border-bottom: solid 1px var(--grey-color-400);}
+
+    .promises_block:last-child,
+    .video_box {border: solid 1px var(--grey-color-400);}
+
+    .circle {stroke: var(--grey-color-400);}
+
+    .promises_block:last-child:hover {border: solid 1px var(--green-color-600);}
+  
+    a:hover {text-decoration: underline 1px var(--green-color-400);}
+  
+    .quote_text_svg path {stroke: var(--green-color-700);}
+  
+    .parent_main_contacts form .registration input {background: none;}
+  
+    .video_box_screen_poster_svg circle {fill: var(--blue-color-200-50);}
+  
+    .video_box_screen_poster_svg path {fill: var(--blue-color-200);}
+    
+    h1, h2, h4, 
+    .size-68, a, 
+    .lato-400 {color: var(--base-color-100);}
+  
+    .green-italic {color: var(--blue-color-200);}
+  
+    .lato-300 {color: var(--base-color-60);}
+  
+    .description {color: var(--base-color-80);}
+  
+    ::placeholder {color: var(--base-color-50);}
+  
+    .button {color: var(--green-color-400);}
+  
+    .button:hover {color: var(--green-color-600);}
+  
+    button {box-shadow: 10px 5px 5px 5px var(--green-color-300);}
+  
+    button:hover {box-shadow: 10px 5px 5px 5px var(--green-color-500)}
+  }
+}

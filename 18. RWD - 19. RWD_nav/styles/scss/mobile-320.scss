@@ -1,0 +1,48 @@
+@media screen and (max-width: 320px) {
+
+  // Header container
+
+  .header_container {
+    position: fixed;
+    width: auto;
+
+    &_navigation {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+
+  // Section screen
+
+  .screen {
+    background-size: 200% 500px;
+
+    &_block {
+      padding: 70px 10px 230px 10px;
+
+      h1 {
+        font-size: 26px; 
+        line-height: 50px;
+      }
+    }
+  }
+
+  // Main container
+
+  .blog_box {
+
+    &_first { 
+
+      &_left { img {height: 250px;}}
+    }
+
+    &_second { 
+
+      &_left { img {height: 250px;}}
+    }
+  }
+
+  .main_box { img {height: 210px;}}
+
+  .main_container_content_popular { &_article {img { height: 150px;}}}
+}

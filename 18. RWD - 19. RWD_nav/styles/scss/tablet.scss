@@ -1,0 +1,154 @@
+@media screen and (max-width: 768px) {
+  .parent_container { padding: 0 10px 0 10px;}
+
+// Header container
+
+.header_container_navigation_menu {
+  gap: 40px; 
+  padding: 10px;
+}
+
+.menu {
+  &_list {display: none;}
+}
+
+// side menu
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  position: relative;
+  width: 100px;
+  height: 40px;
+}
+
+#check_menu { opacity: 0;}
+#check_menu:checked ~ .side_menu_list { max-height: 150px;}
+
+.check_menu_label {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.burger_line {
+  position: absolute;
+  right: 10px;
+  background-color: var(--base_color-1);
+  width: 40px;
+  height: 2px;
+}
+
+.first { top: 8px;}
+.second, .third { top: 18px;}
+.fourth { top: 28px;}
+
+#check_menu:checked ~ .first { display: none;}
+#check_menu:checked ~ .second { transform: rotate(45deg); transition: 0.5s all;}
+#check_menu:checked ~ .third { transform: rotate(-45deg); transition: 0.5s all;}
+#check_menu:checked ~ .fourth { display: none;}
+
+.side_menu_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  width: 100%;
+  background-color: rgba($color: #f8f7f7, $alpha: 0.5);
+  bottom: 0;
+  right: 20px;
+  transform: translateY(100%);
+  padding-top: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+
+// Section screen
+
+.screen_block {
+  padding: 20px 25px 150px 25px;
+
+  h1 {font-size: 36px;}
+}
+
+// Main container
+
+.main_container_content_info {
+  flex-direction: column;
+  gap: 70px;
+
+  &_content {
+  text-align: end;
+  }
+}
+
+.blog_box {
+  gap: 20px;
+
+  &_first_left,
+  &_second_left {
+
+    img {
+      width: 340px;
+      height: 280px;
+    }
+  }
+}
+
+.main_container_content_posts {
+
+  &_main {
+    flex-direction: column;
+  }
+}
+
+.main_box {
+  flex-direction: row;
+
+  img {
+    width: 340px;
+      height: 240px;
+  }
+
+  &_content {justify-content: center;}
+}
+
+.main_box:nth-child(2) { flex-direction: row-reverse;}
+
+.article-post_1,
+.article-post_2 {
+
+  img {
+    width: 340px;
+      height: 240px;
+  }
+}
+
+// Footer container
+
+.footer_container {
+  height: 410px;
+
+  &_company {
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+
+    &_logo { align-items: center;}
+
+    &_social { justify-content: center;}
+  }
+}
+
+.footer_container_company_logo_contacts { align-items: center;}
+}
+

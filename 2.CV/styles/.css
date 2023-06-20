@@ -1,0 +1,61 @@
+body {
+  background: linear-gradient(
+    to right,
+    black 10%,
+    rgb(0, 183, 255) 40%,
+    white 50%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: black;
+  line-height: 1.5;
+  margin: auto;
+  font-style: normal;
+  width: 500px;
+  height: 500px;
+  margin-top: 10px;
+}
+
+.photo {
+  display: block;
+  margin-left: 150px;
+}
+
+.main {
+  text-align: justify;
+}
+
+.skills {
+  text-align: left;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.education {
+  text-align: center;
+}
+
+.skills {
+  overflow: hidden;
+}
+
+.column-right {
+  float: left;
+  width: 50%;
+}
+
+.column-left {
+  margin-left: 50%;
+}
+
+.about {
+  text-align: justify;
+}

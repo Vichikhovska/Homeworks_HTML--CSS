@@ -1,0 +1,243 @@
+*{ box-sizing: border-box;}
+
+.parent_container {
+  max-width: 1200px;
+  height: 100hv;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 100px;
+  gap: 40px;
+}
+
+/*first_form*/
+
+.first_form, .second_form {
+  border: solid rgb(231, 227, 227) 2px;
+  box-shadow: 0 15px 20px #bdbbbb;
+
+  padding: 20px;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 0;
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1C1C1C;
+}
+
+.main_content {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  height: max-content;
+}
+
+.content:nth-child(3),
+.content:nth-child(4),
+.content:nth-child(7),
+.content:nth-child(8),
+.content:last-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.content:nth-child(3) input {width: 100%;}
+
+* label, span, .select-form option {
+  display: block;
+  padding-bottom: 10px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #545454;
+}
+
+* p, .second_content_comment {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+
+  padding: 5px;
+  margin: 0;
+}
+
+.content input,
+.second_content input, .select-form {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  margin: 0;
+
+  background: #FFFFFF;
+  border: 1px solid #8f8c8c;
+  border-radius: 6px;
+}
+
+::placeholder {
+  color: rgb(179, 175, 175);
+  letter-spacing: 2px;
+}
+
+.idontknow {position: relative;}
+
+.select {
+  display: flex;
+  flex-direction: column;
+}
+
+.select_change {appearance: none;}
+
+.select_arrows {
+  position: absolute;
+  right: 5px;
+  bottom: 9px;
+}
+
+.select-form option:focus {border: 1px solid #007BFF;}
+
+.all_genders {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-gap: 20px;
+}
+
+.gender {
+  display: flex;
+  justify-content: flex-start;
+  grid-gap: 10px;
+  cursor: pointer;
+}
+
+.gender_input { display: none;}
+
+.gender_input_true {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+
+  border: 1px solid #E4E4E4;
+  border-radius: 50% 50%;
+  background-color: #FFFFFF;
+}
+
+.gender_input_true:after {
+  content: " ";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 5px;
+
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.gender_input:checked + .gender_input_true {
+  background-color: #007BFF;
+}
+
+.content:nth-child(7) button {
+  background: #007BFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  color: #ffffff;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+}
+
+.content:last-child,
+.content:nth-child(8) {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+}
+
+input:focus{ border-color: #007BFF;}
+
+/*second_form*/
+
+.second_content:first-child {
+  display: flex;
+  justify-content: flex-start;
+  grid-gap: 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.second_content_avatar { 
+  width: 80px;
+  height: 80px;
+}
+
+.second_content_div {
+  display: flex;
+  align-items: flex-start;
+  grid-gap: 10px;
+}
+.second_content_file{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-gap: 10px;
+}
+.second_content_file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 8px;
+  width: 100%;
+  position: relative;
+
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+}
+
+.second_content_file-upload_input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.second_content_button button {
+  display: flex;
+  padding: 8px;
+
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+}
+.second_form_button_2 {padding: 20px;}
+
+.second_form_button_2 button {
+  background: #007BFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  color: #ffffff;
+
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <form class="box" method="post" action="#">
+      <div>
+        <h1>Форма реєстрації</h1>
+        <label for="name"></label>
+        <input type="text" placeholder="ПІБ" id="name" />
+        <label for="tel"></label>
+        <input type="tel" placeholder="Номер телефoну" id="tel" />
+        <label for="address"></label>
+        <input type="text" placeholder="Повна адреса" required id="address" />
+        <label for="email"></label>
+        <input type="email" placeholder="Ваш email" required id="email" />
+        <label for="pass"></label>
+        <input type="password" placeholder="Ваш пароль" required id="pass" />
+        <label for="parol"></label>
+        <input
+          type="password"
+          placeholder="Повторіть пароль"
+          required
+          id="parol"
+        />
+      </div>
+      <div class="other">
+        <h3>Оберіть стать</h3>
+        <label for="man">Чоловік</label>
+        <input type="radio" name="man" id="man" />
+        <label for="woman">Жінка</label>
+        <input type="radio" name="woman" id="woman" />
+        <h3>Вкажіть ваш вік, дату народження</h3>
+        <input type="number" min="18" max="100" />
+        <input type="date" /> <br />
+      </div>
+      <div class="course">
+        <h3>Оберіть курс</h3>
+        <select>
+          <option value="1">Front-End</option>
+          <option value="2">Back-End</option>
+          <option value="3">Project Management</option>
+          <option value="4">QA Manual</option>
+        </select>
+      </div>
+      <div class="footer">
+        <label for="yes"> Я погоджуюсь з обробкою персональних даних </label>
+        <input type="checkbox" name="confidentiality" id="yes" />
+        <button type="reset">Очистити форму</button>
+        <button type="submit">Зареєструватись</button>
+      </div>
+    </form>
+  </body>
+</html>
